@@ -1,6 +1,6 @@
 # GitHub Explorer
 
-Simple demo project that shows repositories details using React - using React Hooks, `styled-components`, `react-router-dom`. The proejct was initialized using `create-react-app`.
+Simple demo project that shows Github API repositories data using React - using React Hooks, `styled-components`, `react-router-dom`. The proejct was initialized using `create-react-app`.
 
 For running, `npm start` or `yarn start`.
 
