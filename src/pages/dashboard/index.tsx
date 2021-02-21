@@ -1,4 +1,5 @@
 import React, { useState, FormEvent, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { RepositoryForm, RepositoryCard, FormErrorMessage } from '../../components';
 import { Title } from '../../components/form';
 import { Repository } from '../../models';
@@ -57,13 +58,13 @@ const Dashboard: React.FC = () => {
 
       {repositories.map(repository => (
         <RepositoryCard key={repository.full_name} className="repository">
-          <a href="next">
+          <Link to={`/repository/${repository.full_name}`}>
             <img alt={repository.full_name} src={repository.owner.avatar_url}></img>
             <div className="details">
               <strong>{repository.full_name}</strong>
               <p>{repository.description}</p>
             </div>
-          </a>
+          </Link>
         </RepositoryCard>
       ))}
       

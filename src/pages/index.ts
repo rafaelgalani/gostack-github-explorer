@@ -1,2 +1,2 @@
 export { default as Dashboard } from './dashboard'
-export { default as Repository } from './repository'
+export { default as RepositoryDetail } from './repository'
